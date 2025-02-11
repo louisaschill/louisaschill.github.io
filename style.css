@@ -101,3 +101,20 @@ footer {
         width: 45%; /* Adjusts image size for mobile */
     }
 }
+
+
+.cv-button {
+    display: inline-block;
+    background-color: #d4b896; /* Warm tan color */
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: 0.3s ease;
+}
+
+.cv-button:hover {
+    background-color: #b89e7c; /* Slightly darker on hover */
+}
