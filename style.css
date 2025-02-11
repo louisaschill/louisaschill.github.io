@@ -140,3 +140,22 @@ footer {
         font-size: 14px;
     }
 }
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 30px;  /* Ensures all icons are uniform */
+    height: 30px;
+    object-fit: contain; /* Keeps proportions */
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
