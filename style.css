@@ -75,17 +75,16 @@ footer {
     text-align: left;
 }
 
-/* Image Gallery for Brain Awareness Day */
 .image-gallery {
     display: flex;
     justify-content: center;
-    gap: 10px; /* Space between images */
+    gap: 15px; /* Space between images */
     margin-top: 10px;
-    flex-wrap: wrap; /* Wraps images to the next line on smaller screens */
+    flex-wrap: nowrap; /* Keeps images in a single row */
 }
 
 .image-gallery img {
-    width: 150px; /* Adjust image size */
+    width: 200px; /* Slightly larger images */
     height: auto;
     max-width: 100%;
     border-radius: 10px;
