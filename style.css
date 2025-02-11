@@ -1,23 +1,25 @@
-/* Import Roboto Font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-
-/* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f7f2e7; /* Soft beige background */
+    background: linear-gradient(180deg, #f8f6f3, #e5e1da);
     color: #333;
-    text-align: center;
 }
 
-/* Header Styles */
+/* Sticky Header */
 header {
-    background-color: #d4b896; /* Warm tan */
+    background-color: #d4b896;
     color: white;
     padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
+/* Navigation */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -32,89 +34,35 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-/* Section Styles */
-section {
-    padding: 40px 20px;
+nav ul li a:hover {
+    color: #5a4f3b;
+}
+
+/* Sections */
+.content-region {
+    padding: 80px 20px;
     max-width: 900px;
-    margin: 0 auto;
-    background: #fdf8f2; /* Soft off-white */
+    margin: 80px auto;
+    background: white;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
 }
 
-/* Footer */
-footer {
-    background-color: #d4b896; /* Warm tan */
-    color: white;
-    padding: 10px;
-    position: relative;
-    width: 100%;
-    bottom: 0;
-}
-
-/* Profile Picture */
-.profile-pic {
-    width: 180px;
-    height: auto;
-    border-radius: 50%;
-    display: block;
-    margin: 20px auto;
-}
-
-/* Experience Box */
-.experience {
-    background-color: #ffffff;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    text-align: left;
-}
-
-.image-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 15px; /* Space between images */
-    margin-top: 10px;
-    flex-wrap: nowrap; /* Keeps images in a single row */
-}
-
-.image-gallery img {
-    width: 200px; /* Slightly larger images */
-    height: auto;
-    max-width: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-}
-
-/* Responsive Design for Smaller Screens */
-@media screen and (max-width: 600px) {
-    .image-gallery {
-        flex-wrap: wrap; /* Allows images to stack if the screen is too small */
-    }
-
-    .image-gallery img {
-        width: 45%; /* Adjusts image size for mobile */
-    }
-}
-
-
+/* CV Button */
 .cv-button {
     display: inline-block;
-    background-color: #d4b896; /* Warm tan color */
+    background-color: #5a4f3b;
     color: white;
-    padding: 10px 15px;
+    padding: 12px 18px;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
-    margin-top: 10px;
-    transition: 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 .cv-button:hover {
-    background-color: #b89e7c; /* Slightly darker on hover */
+    background-color: #8a7c62;
 }
