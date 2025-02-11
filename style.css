@@ -62,12 +62,14 @@ footer {
 .image-gallery {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 10px; /* Space between images */
     margin-top: 10px;
+    flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
 }
 
 .image-gallery img {
-    width: 45%;
+    width: 30%; /* Adjust size as needed */
+    max-width: 200px; /* Ensures they don’t get too big */
     height: auto;
     border-radius: 10px;
 }
