@@ -1,113 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Page setup -->
     <meta charset="UTF-8">
-    <title>Louisa Schilling - Neuroscience PhD</title>
-    <meta name="description" content="Neuroscience PhD student researching brain dynamics, psychopathology risk, and gender differences.">
-    <meta name="author" content="Louisa Schilling">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="icon" type="image/png" href="favicon.png">
-
-    <!-- Normalize.css for consistent styling across browsers -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-
-    <!-- Google Fonts (Roboto + Open Sans) -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-
-    <!-- Custom styles -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- jQuery for animations -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louisa Schilling | Neuroscience PhD</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
 
-    <!-- Sticky Header -->
-    <header id="header">
-        <h1>Louisa Schilling</h1>
-        <p>Neuroscience PhD Student | Researcher</p>
-        <nav>
-            <ul class="main-menu">
-                <li><a href="#about">About</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#experiences">Experiences</a></li>
-                <li><a href="#cv">CV</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- Header with Profile Image & Name -->
+    <header>
+        <div class="container">
+            <img src="profile.jpg" alt="Louisa Schilling" class="circular-image">
+            <h1>Louisa Schilling</h1>
+            <h2 class="h2-spacing">Neuroscience PhD Candidate</h2>
+            <div class="social-icons">
+                <a href="https://scholar.google.com/" target="_blank"><img src="images/google-scholar-icon.png" alt="Google Scholar"></a>
+                <a href="https://www.linkedin.com/in/louisa-schilling-70b742129/" target="_blank"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="https://github.com/louisaschill" target="_blank"><img src="images/github-icon.png" alt="GitHub"></a>
+                <a href="#" id="email-link" onclick="copyEmailToClipboard(event)"><img src="images/email-icon.png" alt="Email"></a>
+            </div>
+        </div>
     </header>
 
-    <div id="container">
-        <div class="inner">
-            <div id="content"> 
+    <!-- Navigation Menu -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="Louisa_Schilling_CV.pdf" target="_blank">CV</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-                <!-- About Section -->
-                <section id="about" class="content-region">
-                    <h2>About Me</h2>
-                    <img src="profile.jpg" alt="Louisa Schilling" class="profile-pic">
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <section id="about">
+                <h1>About</h1>
+                <div class="aboutbody">
                     <p>
                         I study how brain dynamics emerge across development, what dysfunctions in these dynamics reflect risk of psychopathology, and how these processes are modified by sex and gender.
                     </p>
-                </section>
+                </div>
+            </section>
 
-                <!-- CV Section (Modern Card Style) -->
-                <section id="cv" class="content-region cv-section">
-                    <h2>Curriculum Vitae</h2>
-                    <p>Download my full CV here:</p>
-                    <a href="Louisa_Schilling_CV.pdf" target="_blank" class="cv-button">Download CV (PDF)</a>
-                </section>
+            <section id="research">
+                <h1>Research</h1>
+                <div class="aboutbody">
+                    <p>
+                        My research investigates functional brain dynamics and network transitions across development, with a focus on their implications for psychopathology risk. I explore how these dynamics are influenced by factors like sex, gender, and family history of substance use disorder.
+                    </p>
+                </div>
+            </section>
 
-                <!-- Publications Section -->
-                <section id="publications" class="content-region">
-                    <h2>Publications</h2>
-                    <div class="publication">
-                        <p><a href="https://www.biorxiv.org/content/10.1101/2024.09.03.610959v1" target="_blank">Schilling et al., 2024 "Sex-specific differences in brain activity dynamics of youth with a family history of substance use disorder", biorxiv.</a></p>
-                        <p><a href="https://pubmed.ncbi.nlm.nih.gov/38839036/" target="_blank">Singleton et al., 2024 "Altered Structural Connectivity and Functional Brain Dynamics in Individuals With Heavy Alcohol Use", Biol Psychiatry Cogn Neurosci Neuroimaging.</a></p>
+            <section id="experiences">
+                <h1>Experiences</h1>
+
+                <div class="experience">
+                    <h3>Machine Learning in Medicine Webinar Series</h3>
+                    <p>I help organize the <a href="https://www.mlim-cornell.club/" target="_blank">Machine Learning in Medicine (MLiM) virtual webinar series</a>, where we host experts on AI applications in healthcare.</p>
+                </div>
+
+                <div class="experience">
+                    <h3>Brain Awareness Day - Weill Cornell</h3>
+                    <p>I co-organized Brain Awareness Day in December 2024, an educational outreach event bringing neuroscience to local 4th-grade students.</p>
+                    <div class="image-gallery">
+                        <img src="brainday1.jpeg" alt="Our volunteer team of PhD students.">
+                        <img src="brainday2.jpeg" alt="My co-organizer, Erica Bulzomi, and I.">
+                        <img src="brainday3.jpeg" alt="Fourth grade students learning about the brain.">
                     </div>
-                </section>
-
-                <!-- Experiences Section -->
-                <section id="experiences" class="content-region">
-                    <h2>Experiences</h2>
-
-                    <div class="experience">
-                        <h3>Machine Learning in Medicine Webinar Series</h3>
-                        <p>
-                            I help organize the <a href="https://www.mlim-cornell.club/" target="_blank">Machine Learning in Medicine (MLiM) virtual webinar series</a>, in which we host experts on AI applications in healthcare.
-                        </p>
-                    </div>
-
-                    <div class="experience">
-                        <h3>Brain Awareness Day - Weill Cornell</h3>
-                        <p>
-                            I co-organized Brain Awareness Day in December 2024, an educational outreach event bringing neuroscience to local 4th-grade students.
-                        </p>
-                        <div class="image-gallery">
-                            <img src="brainday1.jpeg" alt="Our volunteer team of PhD students.">
-                            <img src="brainday2.jpeg" alt="My co-organizer, Erica Bulzomi, and I.">
-                            <img src="brainday3.jpeg" alt="Fourth grade students learning about the brain.">
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Contact Section -->
-                <section id="contact" class="content-region">
-                    <h2>Contact</h2>
-                    <p>Email: <a href="mailto:lss4002@med.cornell.edu">lss4002@med.cornell.edu</a></p>
-                    <p>GitHub: <a href="https://github.com/louisaschill" target="_blank">louisaschill</a></p>
-                    <p>LinkedIn: <a href="https://www.linkedin.com/in/louisa-schilling-70b742129/" target="_blank">Louisa Schilling</a></p>
-                    <p>GoogleScholar: <a href="https://scholar.google.com/citations?hl=en&user=nDA3ENMAAAAJ&sortby=pubdate&view_op=list_works&gmla=AOv-ny84-t9bul40y2wi3EVRXGHp0rsoAwayW4YRRWj1KPcr6tq2lRfv2gXCnSbVOWb0NurZBTJTr7FMu3GLo1NZ" target="_blank">Louisa Schilling</a></p>
-                </section>
-
-            </div>
+                </div>
+            </section>
         </div>
-    </div>
+    </main>
 
+    <!-- Footer -->
     <footer>
-        <p>© 2025 Louisa Schilling | Neuroscience PhD Candidate</p>
+        <div class="container">
+            <p>© 2025 Louisa Schilling | Neuroscience PhD Candidate</p>
+        </div>
     </footer>
+
+    <!-- Email Copy-to-Clipboard Script -->
+    <script>
+        function copyEmailToClipboard(event) {
+            event.preventDefault();
+            const email = 'lss4002@med.cornell.edu';
+            const textarea = document.createElement('textarea');
+
+            textarea.value = email;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+
+            alert('Email address copied to clipboard!');
+        }
+    </script>
 
 </body>
 </html>
