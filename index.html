@@ -12,20 +12,19 @@
     <!-- Normalize.css for consistent styling across browsers -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
-    <!-- Google Fonts (Roboto) -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts (Roboto + Open Sans) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
     <!-- Custom styles -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" 
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
-        crossorigin="anonymous"></script>
+    <!-- jQuery for animations -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 
 <body>
 
+    <!-- Sticky Header -->
     <header id="header">
         <h1>Louisa Schilling</h1>
         <p>Neuroscience PhD Student | Researcher</p>
@@ -53,20 +52,20 @@
                     </p>
                 </section>
 
-                <section id="cv" class="content-region">
+                <!-- CV Section (Modern Card Style) -->
+                <section id="cv" class="content-region cv-section">
                     <h2>Curriculum Vitae</h2>
-                    <p>You can download my full CV here:</p>
+                    <p>Download my full CV here:</p>
                     <a href="Louisa_Schilling_CV.pdf" target="_blank" class="cv-button">Download CV (PDF)</a>
                 </section>
-            
 
                 <!-- Publications Section -->
                 <section id="publications" class="content-region">
                     <h2>Publications</h2>
-                    <p><a href="https://www.biorxiv.org/content/10.1101/2024.09.03.610959v1" target="_blank">Schilling et al., 2024 "Sex-specific differences in brain activity dynamics of youth with a family history of substance use disorder", biorxiv.</a></p>
-                    <p><a href="https://pubmed.ncbi.nlm.nih.gov/38839036/" target="_blank">Singleton et al., 2024 "Altered Structural Connectivity and Functional Brain Dynamics in Individuals With Heavy Alcohol Use", Biol Psychiatry Cogn Neurosci Neuroimaging.</a></p>
-                    <p><a href="https://www.biorxiv.org/content/10.1101/2023.12.14.571653v1" target="_blank">Liebena-Garcia et al., 2023 "Striatal dopamine reflects individual long-term learning trajectories", biorxiv.</a></p>
-                    <p><a href="https://pubmed.ncbi.nlm.nih.gov/26611556/" target="_blank">Schilling L. & Markman J., 2016 "Corticosteroids for Pain of Spinal Origin", Rheum Dis Clin North Am.</a></p>
+                    <div class="publication">
+                        <p><a href="https://www.biorxiv.org/content/10.1101/2024.09.03.610959v1" target="_blank">Schilling et al., 2024 "Sex-specific differences in brain activity dynamics of youth with a family history of substance use disorder", biorxiv.</a></p>
+                        <p><a href="https://pubmed.ncbi.nlm.nih.gov/38839036/" target="_blank">Singleton et al., 2024 "Altered Structural Connectivity and Functional Brain Dynamics in Individuals With Heavy Alcohol Use", Biol Psychiatry Cogn Neurosci Neuroimaging.</a></p>
+                    </div>
                 </section>
 
                 <!-- Experiences Section -->
