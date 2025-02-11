@@ -1,69 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Page setup -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Louisa Schilling</title>
+    <title>Louisa Schilling - Neuroscience PhD</title>
+    <meta name="description" content="Neuroscience PhD student researching brain dynamics, psychopathology risk, and gender differences.">
+    <meta name="author" content="Louisa Schilling">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Normalize.css for consistent styling across browsers -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!-- Google Fonts (Roboto) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Custom styles -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" 
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
+        crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header>
+
+    <header id="header">
         <h1>Louisa Schilling</h1>
         <p>Neuroscience PhD Student | Researcher</p>
         <nav>
-            <ul>
+            <ul class="main-menu">
                 <li><a href="#about">About</a></li>
                 <li><a href="#publications">Publications</a></li>
-                 <li><a href="#experiences">Experiences</a></li>
-                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <img src="profile.jpg" alt="Louisa Schilling" class="profile-pic">
-        <p>I study how brain dynamics emerge across development, what dysfunctions in these dynamics reflect risk of psychopathology, and how these processes are modified by sex and gender.</p>
-    </section>
+    <div id="container">
+        <div class="inner">
+            <div id="content"> 
 
-    <section id="publications">
-        <h2>Publications</h2>
-        <p><a href="https://www.biorxiv.org/content/10.1101/2024.09.03.610959v1" target="_blank">Schilling et al., 2024 "Sex-specific differences in brain activity dynamics of youth with a family history of substance use disorder", biorxiv. </a></p>
-        <p><a href="https://pubmed.ncbi.nlm.nih.gov/38839036/" target="_blank">Singleton et al., 2024 "Altered Structural Connectivity and Functional Brain Dynamics in Individuals With Heavy Alcohol Use Elucidated via Network Control Theory", Biol Psychiatry Cogn Neurosci Neuroimaging. </a></p>
-        <p><a href="https://www.biorxiv.org/content/10.1101/2023.12.14.571653v1" target="_blank">Liebena-Garcia et al., 2023 "Striatal dopamine reflects individual long-term learning trajectories", biorxiv. </a></p>
-        <p><a href="https://pubmed.ncbi.nlm.nih.gov/26611556/" target="_blank">Schilling L. & Markman J., 2016 "Corticosteroids for Pain of Spinal Origin: Epidural and Intraarticular Administration", Rheum Dis Clin North Am. </a></p>
-    </section>
+                <!-- About Section -->
+                <section id="about" class="content-region">
+                    <h2>About Me</h2>
+                    <img src="profile.jpg" alt="Louisa Schilling" class="profile-pic">
+                    <p>
+                        I study how brain dynamics emerge across development, what dysfunctions in these dynamics reflect risk of psychopathology, and how these processes are modified by sex and gender.
+                    </p>
+                </section>
 
-    <section id="experiences">
-        <h2>Experiences</h2>
-        
-        <div class="experience">
-            <h3>Machine Learning in Medicine Webinar Series</h3>
-            <p>I help organize the <a href="https://www.mlim-cornell.club/" target="_blank">Machine Learning in Medicine (MLiM) virtual webinar series</a>, in which we host experts on AI applications in healthcare.</p>
-        </div>
+                <!-- Publications Section -->
+                <section id="publications" class="content-region">
+                    <h2>Publications</h2>
+                    <p><a href="https://www.biorxiv.org/content/10.1101/2024.09.03.610959v1" target="_blank">Schilling et al., 2024 "Sex-specific differences in brain activity dynamics of youth with a family history of substance use disorder", biorxiv.</a></p>
+                    <p><a href="https://pubmed.ncbi.nlm.nih.gov/38839036/" target="_blank">Singleton et al., 2024 "Altered Structural Connectivity and Functional Brain Dynamics in Individuals With Heavy Alcohol Use", Biol Psychiatry Cogn Neurosci Neuroimaging.</a></p>
+                    <p><a href="https://www.biorxiv.org/content/10.1101/2023.12.14.571653v1" target="_blank">Liebena-Garcia et al., 2023 "Striatal dopamine reflects individual long-term learning trajectories", biorxiv.</a></p>
+                    <p><a href="https://pubmed.ncbi.nlm.nih.gov/26611556/" target="_blank">Schilling L. & Markman J., 2016 "Corticosteroids for Pain of Spinal Origin", Rheum Dis Clin North Am.</a></p>
+                </section>
 
-        <div class="experience">
-            <h3>Brain Awareness Day - Weill Cornell</h3>
-            <p>I co-organized Brain Awareness Day in December 2024, an education outreach event bringing neuroscience to local 4th-grade students.</p>
-            <div class="image-gallery">
-                <img src="brainday1.jpeg" alt="Our volunteer team of PhD students.">
-                <img src="brainday2.jpeg" alt="My co-organizer, Erica Bulzomi, and I.">
-                <img src="brainday3.jpeg" alt="Fourth grade students learning about the brain.">
+                <!-- Experiences Section -->
+                <section id="experiences" class="content-region">
+                    <h2>Experiences</h2>
+
+                    <div class="experience">
+                        <h3>Machine Learning in Medicine Webinar Series</h3>
+                        <p>
+                            I help organize the <a href="https://www.mlim-cornell.club/" target="_blank">Machine Learning in Medicine (MLiM) virtual webinar series</a>, in which we host experts on AI applications in healthcare.
+                        </p>
+                    </div>
+
+                    <div class="experience">
+                        <h3>Brain Awareness Day - Weill Cornell</h3>
+                        <p>
+                            I co-organized Brain Awareness Day in December 2024, an educational outreach event bringing neuroscience to local 4th-grade students.
+                        </p>
+                        <div class="image-gallery">
+                            <img src="brainday1.jpeg" alt="Our volunteer team of PhD students.">
+                            <img src="brainday2.jpeg" alt="My co-organizer, Erica Bulzomi, and I.">
+                            <img src="brainday3.jpeg" alt="Fourth grade students learning about the brain.">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contact Section -->
+                <section id="contact" class="content-region">
+                    <h2>Contact</h2>
+                    <p>Email: <a href="mailto:lss4002@med.cornell.edu">lss4002@med.cornell.edu</a></p>
+                    <p>GitHub: <a href="https://github.com/louisaschill" target="_blank">louisaschill</a></p>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/louisa-schilling-70b742129/" target="_blank">Louisa Schilling</a></p>
+                </section>
+
             </div>
         </div>
-    </section>
+    </div>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:lss4002@med.cornell.edu">lss4002@med.cornell.edu</a></p>
-        <p>GitHub: <a href="https://github.com/louisaschill" target="_blank">louisaschill</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/louisa-schilling-70b742129/" target="_blank">Louisa Schilling</a></p>
-    </section>
-
-    
     <footer>
-        <p>© 2025 Louisa Schilling | Neuroscience PhD Candidate </p>
+        <p>© 2025 Louisa Schilling | Neuroscience PhD Candidate</p>
     </footer>
-    
+
 </body>
 </html>
