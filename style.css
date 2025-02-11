@@ -1,48 +1,110 @@
-/* Import Roboto Font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f7f2e7; /* Soft beige background */
+    background-color: #f5f3eb; /* Soft beige */
     color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
-/* Header Styles */
+/* Containers */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.aboutbody {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+/* Header */
 header {
-    background-color: #d4b896; /* Warm tan */
-    color: white;
-    padding: 20px;
+    margin-top: 20px;
+}
+
+.circular-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* Navigation */
+nav {
+    background-color: #8b9b74; /* Muted green */
+    padding: 10px;
+    margin-top: 20px;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
+    color: white;
     font-weight: bold;
 }
 
-/* Section Styles */
-section {
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: 0 auto;
-    background: #fdf8f2; /* Soft off-white */
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Image Gallery */
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.image-gallery img {
+    width: 160px;
+    height: auto;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
 }
 
 /* Footer */
@@ -50,76 +112,22 @@ footer {
     background-color: #d4b896; /* Warm tan */
     color: white;
     padding: 10px;
-    position: relative;
-    width: 100%;
-    bottom: 0;
+    margin-top: 30px;
 }
 
-/* Profile Picture */
-.profile-pic {
-    width: 180px;
-    height: auto;
-    border-radius: 50%;
-    display: block;
-    margin: 20px auto;
-}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        padding: 0 15px;
+    }
 
-/* Experience Box */
-.experience {
-    background-color: #ffffff;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    text-align: left;
-}
-
-.image-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 15px; /* Adds space between images */
-    flex-wrap: wrap; /* Wraps images on smaller screens */
-    margin-top: 20px;
-}
-
-.image-gallery img {
-    width: 180px; /* Adjusted image width */
-    height: auto;
-    max-width: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-    transition: transform 0.3s ease-in-out;
-}
-
-.image-gallery img:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
-}
-
-/* Responsive Design for Smaller Screens */
-@media screen and (max-width: 600px) {
     .image-gallery {
-        flex-wrap: wrap; /* Allows images to stack if the screen is too small */
+        flex-direction: column;
+        align-items: center;
     }
 
     .image-gallery img {
-        width: 45%; /* Adjusts image size for mobile */
+        width: 80%;
     }
-}
-
-
-.cv-button {
-    display: inline-block;
-    background-color: #d4b896; /* Warm tan color */
-    color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    margin-top: 10px;
-    transition: 0.3s ease;
-}
-
-.cv-button:hover {
-    background-color: #b89e7c; /* Slightly darker on hover */
 }
