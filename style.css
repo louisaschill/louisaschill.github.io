@@ -41,3 +41,12 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+.profile-pic {
+    width: 200px; /* Adjust size */
+    height: auto;
+    border-radius: 50%; /* Makes it round */
+    display: block;
+    margin: 20px auto; /* Centers the image */
+}
+
