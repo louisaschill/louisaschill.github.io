@@ -92,17 +92,17 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Image Gallery */
+/* Image Gallery - Outreach Page */
 .image-gallery {
     display: flex;
     justify-content: center;
-    gap: 15px; /* Slightly increase the gap for a cleaner layout */
+    gap: 15px;
     margin-top: 10px;
     flex-wrap: wrap;
 }
 
 .image-gallery img {
-    width: 240px; /* Increase the size of the images */
+    width: 300px;
     height: auto;
     border-radius: 10px;
     transition: transform 0.3s ease;
@@ -128,12 +128,7 @@ footer {
     }
 
     .image-gallery img {
-        width: 90%; /* Make images more responsive on smaller screens */
-    }
-}
-
-    .image-gallery img {
-        width: 80%;
+        width: 90%;
     }
 
     .publication-list li {
@@ -150,9 +145,9 @@ footer {
 }
 
 .social-icons img {
-    width: 30px;  /* Ensures all icons are uniform */
+    width: 30px;
     height: 30px;
-    object-fit: contain; /* Keeps proportions */
+    object-fit: contain;
     transition: transform 0.3s ease;
 }
 
@@ -176,59 +171,18 @@ footer {
     text-align: left;
 }
 
-/* Image Gallery */
-.image-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
-    flex-wrap: wrap;
-}
-
-.image-gallery img {
-    width: 160px;
-    height: auto;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-.image-gallery img:hover {
-    transform: scale(1.05);
-}
-
 /* Mentorship Section */
-#mentorship {
+#mentorship, #teaching {
     text-align: left;
     padding: 20px;
 }
 
-#mentorship h1 {
+#mentorship h1, #teaching h1 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.mentorship .experience {
-    background-color: white;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    text-align: left;
-}
-
-/* Teaching Section */
-#teaching {
-    text-align: left;
-    padding: 20px;
-}
-
-#teaching h1 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.teaching .experience {
+.mentorship .experience, .teaching .experience {
     background-color: white;
     padding: 20px;
     margin: 20px auto;
@@ -260,13 +214,12 @@ footer {
 
 .poster img {
     width: 100%;
-    max-width: 600px; /* Adjust size */
+    max-width: 600px;
     border-radius: 10px;
     margin-top: 15px;
     transition: transform 0.3s ease;
 }
 
 .poster img:hover {
-    transform: scale(1.05); /* Slight zoom effect */
+    transform: scale(1.05);
 }
-
