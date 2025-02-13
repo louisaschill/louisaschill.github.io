@@ -6,24 +6,31 @@
     <title>Research | Louisa Schilling</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <style>
-        .figure-container {
-            display: flex;
-            justify-content: center;
-            background-color: white;
-            padding: 15px;
-            border-radius: 10px;
-            margin: 20px 0;
+        #publications {
+            text-align: center;
         }
 
-        .figure-container img {
-            max-width: 60%;
+        .publication-list {
+            display: inline-block;
+            text-align: left;
+        }
+
+        .aiim-gallery img {
+            width: 120px;
             height: auto;
-            border-radius: 5px;
+            border-radius: 10px;
+            margin-right: 10px;
+        }
+
+        .aiim-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
     <header>
         <div class="container">
             <h1>Research</h1>
@@ -31,68 +38,58 @@
         </div>
     </header>
 
-    <!-- Navigation Menu -->
     <nav>
         <div class="container">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="research.html">Research</a></li>
-                <li><a href="Outreach & Leadership.html">Outreach & Leadership</a></li>                
+                <li><a href="Outreach & Leadership.html">Outreach & Leadership</a></li>
                 <li><a href="Louisa_Schilling_CV.pdf" target="_blank">CV</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Research Section -->
     <main>
         <div class="container">
             <section id="publications">
                 <h1>Publications</h1>
                 <ul class="publication-list">
                     <li><strong>Schilling L., et al.</strong> <a href="https://www.biorxiv.org/content/10.1101/2024.09.03.610959v1" target="_blank">Sex-specific differences in brain activity dynamics of youth with a family history of substance use disorder</a>. <em>bioRxiv</em> (2024).</li>
-                    <div class="figure-container">
-                        <img src="images/workflow.png" alt="workflow figure">
-                    </div>
-
-                    <li>Singleton S. P., Velidi P., <strong>Schilling L.,</strong> Luppi A. I., Jamison K., Parkes L., Kuceyeski A. (2024). <a href="https://www.biologicalpsychiatrycnni.org/article/S2451-9022(24)00139-3/abstract/" target="_blank">Altered structural connectivity and functional brain dynamics in individuals with heavy alcohol use elucidated via network control theory</a>. <em>Biological Psychiatry: Cognitive Neuroscience and Neuroimaging</em>. DOI: 10.1016/j.bpsc.2024.05.006.</li>
-
-                    <li>Liebana Garcia S., Laffere A., Toschi C., <strong>Schilling L.,</strong> Podlaski J., Fritsche M., Zatka-Haas P., et al. (2023). <a href="https://www.biorxiv.org/content/10.1101/2023.12.14.571653v1" target="_blank">Striatal dopamine reflects individual long-term learning trajectories</a>. <em>bioRxiv</em> (2023).</li>
-
-                    <li><strong>Schilling L.,</strong> & Markman J. <a href="https://pubmed.ncbi.nlm.nih.gov/26611556/" target="_blank">Corticosteroids for Pain of Spinal Origin: Epidural and Intraarticular Administration</a>. <em>Rheumatic Disease Clinics of North America</em> 42(1) (2016): 137–155.</li>
+                    <li>Singleton S. P., Velidi P., <strong>Schilling L.,</strong> et al. <a href="https://www.biologicalpsychiatrycnni.org/article/S2451-9022(24)00139-3/abstract/" target="_blank">Altered structural connectivity and functional brain dynamics in individuals with heavy alcohol use elucidated via network control theory</a>. <em>Biological Psychiatry: Cognitive Neuroscience and Neuroimaging</em>. (2024).</li>
+                    <li>Liebana Garcia S., Laffere A., <strong>Schilling L.,</strong> et al. <a href="https://www.biorxiv.org/content/10.1101/2023.12.14.571653v1" target="_blank">Striatal dopamine reflects individual long-term learning trajectories</a>. <em>bioRxiv</em> (2023).</li>
+                    <li><strong>Schilling L.,</strong> & Markman J. <a href="https://pubmed.ncbi.nlm.nih.gov/26611556/" target="_blank">Corticosteroids for Pain of Spinal Origin: Epidural and Intraarticular Administration</a>. <em>Rheumatic Disease Clinics of North America</em> (2016).</li>
                 </ul>
             </section>
         </div>
     </main>
 
     <section id="posters">
-    <h1>Conference Presentations</h1>
+        <h1>Conference Presentations</h1>
 
-    <div class="poster">
-        <h3>Organization of Human Brain Mapping (OHBM) Annual Meeting -  Seoul, SK 2024</h3>
-        <img src="images/ohbm_2024.jpeg" alt="OHBM 2024 Poster">
-    </div>
-
-    <div class="poster">
-        <h3>ABCD Insights & Innovations Meeting (AIIM) Annual Meeting -  Bethesda, MD 2024 </h3>
-         <div class="image-gallery">
-            <img src="images/ABCD AIIM 2024.pdf" alt="AIIM poster.">
-            <img src="images/IMG_2117.jpeg" alt="Louisa Schilling at AIIM meeting.">
+        <div class="poster">
+            <h3>Organization of Human Brain Mapping (OHBM) Annual Meeting - Seoul, SK 2024</h3>
+            <img src="images/ohbm_2024.jpeg" alt="OHBM 2024 Poster">
         </div>
-    </div>
-        
-    <div class="poster">
-        <h3>Organization of Human Brain Mapping (OHBM) Annual Meeting -  Montreal, QC 2023</h3>
-        <img src="images/OHBM_2023.jpg" alt="OHBM 2023 Poster">
-    </div>
-</section>
 
-    <!-- Footer -->
+        <div class="poster">
+            <h3>ABCD Insights & Innovations Meeting (AIIM) Annual Meeting - Bethesda, MD 2024</h3>
+            <div class="aiim-gallery">
+                <img src="images/ABCD_AIIM_2024.pdf" alt="AIIM Poster">
+                <img src="images/IMG_2117.jpeg" alt="Louisa Schilling at AIIM meeting">
+            </div>
+        </div>
+
+        <div class="poster">
+            <h3>Organization of Human Brain Mapping (OHBM) Annual Meeting - Montreal, QC 2023</h3>
+            <img src="images/OHBM_2023.jpg" alt="OHBM 2023 Poster">
+        </div>
+    </section>
+
     <footer>
         <div class="container">
-            <p>© 2025 Louisa Schilling | Neuroscience PhD Candidate</p>
+            <p>&copy; 2025 Louisa Schilling | Neuroscience PhD Candidate</p>
         </div>
     </footer>
-
 </body>
 </html>
