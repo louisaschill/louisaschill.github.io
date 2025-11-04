@@ -331,3 +331,34 @@ footer {
     max-width: 90%;
   }
 }
+
+/* --- Outreach / Engagements Image Gallery Fixes --- */
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.image-gallery img {
+  width: 100%;
+  max-width: 300px;          /* controls desktop size */
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.04);
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  .image-gallery img {
+    max-width: 90%;
+  }
+}
+
