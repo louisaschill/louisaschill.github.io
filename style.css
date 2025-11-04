@@ -1,162 +1,220 @@
-/* Global */
+/* ===========================
+   GLOBAL
+=========================== */
 :root {
   --bg: #fafafa;
   --text: #222;
-  --accent: #4b6cb7;
-  --accent-light: #a7c1ff;
+  --accent: #3b6fc4;
+  --light: #f4f7fb;
 }
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: var(--bg);
   color: var(--text);
+  background-color: var(--bg);
   margin: 0;
   padding: 0;
   line-height: 1.7;
 }
 
-/* Headings */
-h1, h2, h3 {
+h1, h2 {
   font-family: 'Playfair Display', serif;
+  font-weight: 500;
   color: var(--text);
-  margin-bottom: 10px;
 }
 
-/* Hero Section */
-.hero {
-  padding: 60px 20px 40px 20px;
+/* ===========================
+   NAVIGATION
+=========================== */
+.navbar {
   background: white;
-  text-align: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
-.hero-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  max-width: 900px;
+.nav-container {
+  max-width: 1100px;
   margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.hero-image {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
-}
-
-.hero-text h1 {
-  font-size: 2.2em;
-  margin-bottom: 5px;
-}
-
-.hero-text h2 {
-  color: #555;
-  font-weight: 400;
+.nav-logo {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
   font-size: 1.2em;
 }
 
-.hero-bio {
-  max-width: 650px;
-  margin: 15px auto 0 auto;
-  font-size: 1.05em;
-  color: #333;
-}
-
-/* Navigation */
-nav {
-  background-color: var(--accent);
-  padding: 10px 0;
-}
-
-nav ul {
+.nav-links {
   list-style: none;
   display: flex;
-  justify-content: center;
-  gap: 35px;
+  gap: 25px;
   margin: 0;
   padding: 0;
 }
 
-nav ul li a {
-  color: white;
+.nav-links a {
   text-decoration: none;
-  font-weight: 600;
+  color: var(--text);
+  font-weight: 500;
   transition: color 0.3s;
-  position: relative;
 }
 
-nav ul li a::after {
-  content: '';
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  bottom: -4px;
-  left: 0;
-  background-color: white;
-  transition: width 0.3s;
+.nav-links a:hover,
+.nav-links .active {
+  color: var(--accent);
 }
 
-nav ul li a:hover::after {
-  width: 100%;
+/* ===========================
+   HERO SECTION
+=========================== */
+.hero {
+  background: white;
+  padding: 60px 20px;
+  border-bottom: 1px solid #eee;
 }
 
-/* Sections */
+.hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-text h1 {
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.05em;
+  color: #444;
+  margin-bottom: 15px;
+  max-width: 600px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icons img {
+  width: 26px;
+  height: 26px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+/* ===========================
+   SECTIONS
+=========================== */
 .section {
-  max-width: 850px;
+  max-width: 900px;
   margin: 60px auto;
   padding: 0 25px;
 }
 
 .section.light {
-  background-color: #f0f3f9;
+  background: var(--light);
   border-radius: 10px;
   padding: 40px 25px;
 }
 
-/* Skills */
-.skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.section h2 {
+  margin-bottom: 15px;
+}
+
+/* ===========================
+   SKILLS GRID
+=========================== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 12px;
-  list-style: none;
-  padding: 0;
-  margin: 20px 0 0 0;
+  margin-top: 15px;
 }
 
-.skills-list li {
-  background-color: var(--accent-light);
-  padding: 8px 18px;
-  border-radius
-
-/* --- Research Page Additions --- */
-.hero.small {
+.skills-grid div {
   background: white;
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+  padding: 10px 15px;
   text-align: center;
-  padding: 40px 20px 20px 20px;
+  font-size: 0.95em;
+  transition: all 0.2s ease;
 }
 
-.hero-container.small h1 {
-  font-size: 2em;
-  margin-bottom: 5px;
+.skills-grid div:hover {
+  border-color: var(--accent);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-.hero-subtext {
-  font-size: 1.1em;
-  color: #555;
+/* ===========================
+   CONTACT
+=========================== */
+.email-link {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 5px;
 }
 
-.pub-list {
-  list-style: none;
-  padding: 0;
+.email-link:hover {
+  text-decoration: underline;
 }
 
-.pub-list li {
+/* ===========================
+   FOOTER
+=========================== */
+footer {
   background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-  padding: 20px;
-  margin-bottom: 25px;
-  font-size: 1em
+  color: #666;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9em;
+  border-top: 1px solid #eee;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media (max-width: 768px) {
+  .hero-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 25px;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+}
