@@ -298,3 +298,36 @@ footer {
   padding-left: 20px;
   color: #444;
 }
+
+
+/* --- Research Page Image Sizing --- */
+.figure-container img,
+.poster-card img,
+.poster img {
+  width: 100%;
+  max-width: 550px;          /* keeps images readable but never huge */
+  height: auto;
+  border-radius: 8px;
+  margin-top: 12px;
+  margin-bottom: 18px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Tighten layout around figures and poster cards */
+.figure-container,
+.poster-card {
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Responsive scaling for phones/tablets */
+@media (max-width: 768px) {
+  .figure-container img,
+  .poster-card img,
+  .poster img {
+    max-width: 90%;
+  }
+}
