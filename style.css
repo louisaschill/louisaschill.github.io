@@ -70,29 +70,30 @@ h1, h2 {
 }
 
 /* ===========================
-   HERO SECTION
+   HERO SECTION (refined)
 =========================== */
 .hero {
   background: white;
-  padding: 60px 20px;
+  padding: 40px 20px;
   border-bottom: 1px solid #eee;
 }
 
 .hero-inner {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 35px;
   flex-wrap: wrap;
 }
 
 .profile-pic {
-  width: 140px;
-  height: 140px;
+  width: 105px;
+  height: 105px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .hero-text {
@@ -101,31 +102,53 @@ h1, h2 {
 }
 
 .hero-text h1 {
-  font-size: 1.6em;
+  font-size: 1.4em;
   margin-bottom: 10px;
 }
 
 .hero-text p {
-  font-size: 1.05em;
+  font-size: 1em;
   color: #444;
   margin-bottom: 15px;
   max-width: 600px;
+  line-height: 1.6;
 }
 
 .social-icons {
   display: flex;
-  gap: 12px;
+  gap: 10px;
+  margin-top: 5px;
 }
 
 .social-icons img {
-  width: 26px;
-  height: 26px;
+  width: 24px;
+  height: 24px;
   transition: transform 0.3s ease;
 }
 
 .social-icons img:hover {
-  transform: scale(1.2);
+  transform: scale(1.15);
 }
+
+/* Mobile scaling */
+@media (max-width: 768px) {
+  .hero-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 20px;
+  }
+
+  .profile-pic {
+    width: 85px;
+    height: 85px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.25em;
+  }
+}
+
 
 /* ===========================
    SECTIONS
