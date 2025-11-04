@@ -242,7 +242,9 @@ footer {
   }
 }
 
-/* --- Leadership & Mentorship Page Styling --- */
+/* ===========================
+   LEADERSHIP & MENTORSHIP
+=========================== */
 .hero.small {
   background: white;
   text-align: center;
@@ -274,76 +276,26 @@ footer {
   color: #444;
 }
 
-.image-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  justify-content: center;
-}
-
-.image-gallery img {
-  width: 100%;
-  max-width: 300px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease;
-}
-
-.image-gallery img:hover {
-  transform: scale(1.03);
-}
-
 .mentorship-list {
   list-style: disc;
   padding-left: 20px;
   color: #444;
 }
 
-
-/* --- Research Page Image Sizing --- */
-.figure-container img,
-.poster-card img,
-.poster img {
-  width: 100%;
-  max-width: 550px;          /* keeps images readable but never huge */
-  height: auto;
-  border-radius: 8px;
-  margin-top: 12px;
-  margin-bottom: 18px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-
-/* Tighten layout around figures and poster cards */
-.figure-container,
-.poster-card {
-  text-align: center;
-  padding: 10px 0;
-}
-
-/* Responsive scaling for phones/tablets */
-@media (max-width: 768px) {
-  .figure-container img,
-  .poster-card img,
-  .poster img {
-    max-width: 90%;
-  }
-}
-
-/* --- Outreach / Engagements Image Gallery (Refined Size Control) --- */
+/* ===========================
+   OUTREACH / ENGAGEMENT IMAGES
+=========================== */
 .image-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 12px;
-  justify-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
   margin-top: 10px;
 }
 
 .image-gallery img {
-  width: 100%;
-  max-width: 240px;        /* Hard upper limit on desktop */
+  width: auto;
+  max-width: 320px;       /* outreach image cap */
   height: auto;
   border-radius: 8px;
   object-fit: cover;
@@ -355,13 +307,42 @@ footer {
   transform: scale(1.03);
 }
 
-/* Mobile: single column, smaller images */
 @media (max-width: 768px) {
   .image-gallery {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: center;
   }
 
   .image-gallery img {
+    max-width: 90%;
+  }
+}
+
+/* ===========================
+   RESEARCH PAGE IMAGES
+=========================== */
+.figure-container,
+.poster-card {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.figure-container img,
+.poster-card img,
+.poster img {
+  width: auto;
+  max-width: 480px;       /* research image cap */
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 12px auto 18px auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 768px) {
+  .figure-container img,
+  .poster-card img,
+  .poster img {
     max-width: 90%;
   }
 }
