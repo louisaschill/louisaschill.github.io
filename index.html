@@ -1,87 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Louisa Schilling | Data-Driven Scientist</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="favicon.png">
-  <meta name="description" content="Louisa Schilling — Computational neuroscientist and data-driven researcher applying modeling, analytics, and network theory to complex systems.">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet" />
+  <meta name="description" content="Louisa Schilling — PhD Candidate in Computational Neuroscience at Weill Cornell Medicine. Data-driven scientist using modeling and analytics to understand complex systems." />
 </head>
 
 <body>
-  <!-- Header / Hero -->
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">Louisa Schilling</div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="engagements.html">Leadership & Mentorship</a></li>
+        <li><a href="Louisa_Schilling_CV.pdf" target="_blank">CV</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
   <header class="hero">
-    <div class="hero-container">
-      <img src="profile.jpg" alt="Louisa Schilling" class="hero-image">
+    <div class="hero-inner">
+      <img src="profile.jpg" alt="Louisa Schilling" class="profile-pic" />
       <div class="hero-text">
-        <h1>Louisa Schilling</h1>
-        <h2>PhD Candidate · Data-Driven Scientist</h2>
-        <p class="hero-bio">
+        <h1>PhD Candidate · Data-Driven Scientist</h1>
+        <p>
           I’m a computational neuroscientist at Weill Cornell Medicine using data-driven modeling to understand how complex systems — like the brain — change and adapt.  
-          My broader interests span applied data science, predictive modeling, and translating analytical methods to real-world impact.
+          My broader interests span applied data science, predictive modeling, and translating analytical methods to real-world problems.
         </p>
         <div class="social-icons">
-          <a href="https://scholar.google.com/citations?hl=en&user=nDA3ENMAAAAJ" target="_blank"><img src="images/google-scholar-icon.png" alt="Google Scholar"></a>
-          <a href="https://www.linkedin.com/in/louisa-schilling-70b742129/" target="_blank"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
-          <a href="https://github.com/louisaschill" target="_blank"><img src="images/github-icon.png" alt="GitHub"></a>
-          <a href="#" id="email-link" onclick="copyEmailToClipboard(event)"><img src="images/email-icon.png" alt="Email"></a>
+          <a href="https://scholar.google.com/citations?hl=en&user=nDA3ENMAAAAJ" target="_blank"><img src="images/google-scholar-icon.png" alt="Google Scholar" /></a>
+          <a href="https://www.linkedin.com/in/louisa-schilling-70b742129/" target="_blank"><img src="images/linkedin-icon.png" alt="LinkedIn" /></a>
+          <a href="https://github.com/louisaschill" target="_blank"><img src="images/github-icon.png" alt="GitHub" /></a>
+          <a href="#" id="email-link" onclick="copyEmailToClipboard(event)"><img src="images/email-icon.png" alt="Email" /></a>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Navigation -->
-  <nav>
-    <ul>
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="engagements.html">Leadership & Mentorship</a></li>
-      <li><a href="Louisa_Schilling_CV.pdf" target="_blank">CV</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- About Section -->
+  <!-- About -->
   <section id="about" class="section">
     <h2>About</h2>
     <p>
-      I’m currently pursuing my PhD in Computational Neuroscience in the 
+      I’m pursuing my PhD in Computational Neuroscience in the
       <a href="https://www.cocolaboratory.com/" target="_blank">Computational Connectomics Lab</a> at Weill Cornell Medicine.  
-      My work bridges neuroscience, network science, and data analytics — exploring how structure and dynamics shape cognition and behavior.  
-      I’m broadly motivated by questions at the intersection of biology, computation, and society, and I’m eager to apply my modeling skills beyond neuroscience to tackle data-rich, high-impact problems.
+      My research bridges neuroscience, network science, and data analytics — exploring how structure and dynamics shape cognition and behavior.  
+      I’m broadly motivated by questions at the intersection of biology, computation, and society, and I’m eager to apply my modeling and analytical skills beyond neuroscience to solve data-rich, high-impact problems.
     </p>
   </section>
 
-  <!-- Skills Section -->
+  <!-- Skills -->
   <section id="skills" class="section light">
     <h2>Technical Expertise</h2>
-    <ul class="skills-list">
-      <li>Python (scikit-learn, pandas, statsmodels)</li>
-      <li>MATLAB (network control theory, fMRI analysis)</li>
-      <li>Machine Learning & Predictive Modeling</li>
-      <li>Statistical Analysis & Data Visualization</li>
-      <li>Streamlit · GitHub · Jupyter</li>
-    </ul>
+    <div class="skills-grid">
+      <div>Python (scikit-learn, pandas, statsmodels)</div>
+      <div>MATLAB (network control theory, fMRI analysis)</div>
+      <div>Machine Learning & Predictive Modeling</div>
+      <div>Statistical Analysis & Data Visualization</div>
+      <div>Streamlit · GitHub · Jupyter</div>
+    </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Contact -->
   <section id="contact" class="section">
     <h2>Contact</h2>
     <p>
-      I’m always open to collaborations and opportunities to apply data-driven methods to meaningful challenges.  
-      <br><br>
-      <a href="#" id="email-link-bottom" onclick="copyEmailToClipboard(event)" class="email-link">lss4002@med.cornell.edu</a>
+      I’m open to collaborations and opportunities to apply data-driven methods to meaningful challenges.
     </p>
+    <a href="#" id="email-link-bottom" onclick="copyEmailToClipboard(event)" class="email-link">lss4002@med.cornell.edu</a>
   </section>
 
-  <!-- Footer -->
   <footer>
-    <p>© 2025 Louisa Schilling | Data-Driven Scientist</p>
+    <p>© 2025 Louisa Schilling · Data-Driven Scientist</p>
   </footer>
 
-  <!-- Copy Email Script -->
   <script>
     function copyEmailToClipboard(event) {
       event.preventDefault();
