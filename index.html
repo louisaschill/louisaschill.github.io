@@ -1,79 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Louisa Schilling | Neuroscience PhD</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Louisa Schilling | Data-Driven Scientist</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta name="description" content="Louisa Schilling — Computational neuroscientist and data-driven researcher applying modeling, analytics, and network theory to complex systems.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
 </head>
+
 <body>
-
-    <!-- Header with Profile Image & Name -->
-    <header>
-        <div class="container">
-            <img src="profile.jpg" alt="Louisa Schilling" class="circular-image">
-            <h1>Louisa Schilling</h1>
-            <h2 class="h2-spacing">Neuroscience PhD Candidate</h2>
-            <div class="social-icons">
-                <a href="https://scholar.google.com/citations?hl=en&user=nDA3ENMAAAAJ&sortby=pubdate&view_op=list_works&gmla=AOv-ny84-t9bul40y2wi3EVRXGHp0rsoAwayW4YRRWj1KPcr6tq2lRfv2gXCnSbVOWb0NurZBTJTr7FMu3GLo1NZ" target="_blank"><img src="images/google-scholar-icon.png" alt="Google Scholar"></a>
-                <a href="https://www.linkedin.com/in/louisa-schilling-70b742129/" target="_blank"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
-                <a href="https://github.com/louisaschill" target="_blank"><img src="images/github-icon.png" alt="GitHub"></a>
-                <a href="#" id="email-link" onclick="copyEmailToClipboard(event)"><img src="images/email-icon.png" alt="Email"></a>
-            </div>
+  <!-- Header / Hero -->
+  <header class="hero">
+    <div class="hero-container">
+      <img src="profile.jpg" alt="Louisa Schilling" class="hero-image">
+      <div class="hero-text">
+        <h1>Louisa Schilling</h1>
+        <h2>PhD Candidate · Data-Driven Scientist</h2>
+        <p class="hero-bio">
+          I’m a computational neuroscientist at Weill Cornell Medicine using data-driven modeling to understand how complex systems — like the brain — change and adapt.  
+          My broader interests span applied data science, predictive modeling, and translating analytical methods to real-world impact.
+        </p>
+        <div class="social-icons">
+          <a href="https://scholar.google.com/citations?hl=en&user=nDA3ENMAAAAJ" target="_blank"><img src="images/google-scholar-icon.png" alt="Google Scholar"></a>
+          <a href="https://www.linkedin.com/in/louisa-schilling-70b742129/" target="_blank"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+          <a href="https://github.com/louisaschill" target="_blank"><img src="images/github-icon.png" alt="GitHub"></a>
+          <a href="#" id="email-link" onclick="copyEmailToClipboard(event)"><img src="images/email-icon.png" alt="Email"></a>
         </div>
-    </header>
+      </div>
+    </div>
+  </header>
 
-    <!-- Navigation Menu -->
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="Outreach & Leadership.html">Outreach & Leadership</a></li>
-                <li><a href="Louisa_Schilling_CV.pdf" target="_blank">CV</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="engagements.html">Leadership & Mentorship</a></li>
+      <li><a href="Louisa_Schilling_CV.pdf" target="_blank">CV</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- Main Content -->
-    <main>
-        <div class="container">
-            <section id="about">
-                <h1>About</h1>
-                <div class="aboutbody">
-                    <p>
-                        I am a PhD candidate working in the <a href="https://www.cocolaboratory.com/" target="_blank">Computational Connectomics (CoCo) Labortatory</a> at Weill Cornell Medicine. 
-                        I study how brain network dynamics emerge across development, the dysfunctions in these dynamics that reflect psychopathology, and how these processes are modified by sex and gender.
-                    </p>
-                </div>
-            </section>
-        </div>
-    </main>
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About</h2>
+    <p>
+      I’m currently pursuing my PhD in Computational Neuroscience in the 
+      <a href="https://www.cocolaboratory.com/" target="_blank">Computational Connectomics Lab</a> at Weill Cornell Medicine.  
+      My work bridges neuroscience, network science, and data analytics — exploring how structure and dynamics shape cognition and behavior.  
+      I’m broadly motivated by questions at the intersection of biology, computation, and society, and I’m eager to apply my modeling skills beyond neuroscience to tackle data-rich, high-impact problems.
+    </p>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>© 2025 Louisa Schilling | Neuroscience PhD Candidate</p>
-        </div>
-    </footer>
+  <!-- Skills Section -->
+  <section id="skills" class="section light">
+    <h2>Technical Expertise</h2>
+    <ul class="skills-list">
+      <li>Python (scikit-learn, pandas, statsmodels)</li>
+      <li>MATLAB (network control theory, fMRI analysis)</li>
+      <li>Machine Learning & Predictive Modeling</li>
+      <li>Statistical Analysis & Data Visualization</li>
+      <li>Streamlit · GitHub · Jupyter</li>
+    </ul>
+  </section>
 
-    <!-- Email Copy-to-Clipboard Script -->
-    <script>
-        function copyEmailToClipboard(event) {
-            event.preventDefault();
-            const email = 'lss4002@med.cornell.edu';
-            const textarea = document.createElement('textarea');
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>
+      I’m always open to collaborations and opportunities to apply data-driven methods to meaningful challenges.  
+      <br><br>
+      <a href="#" id="email-link-bottom" onclick="copyEmailToClipboard(event)" class="email-link">lss4002@med.cornell.edu</a>
+    </p>
+  </section>
 
-            textarea.value = email;
-            document.body.appendChild(textarea);
-            textarea.select();
-            document.execCommand('copy');
-            document.body.removeChild(textarea);
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Louisa Schilling | Data-Driven Scientist</p>
+  </footer>
 
-            alert('Email address copied to clipboard!');
-        }
-    </script>
-
+  <!-- Copy Email Script -->
+  <script>
+    function copyEmailToClipboard(event) {
+      event.preventDefault();
+      const email = 'lss4002@med.cornell.edu';
+      const textarea = document.createElement('textarea');
+      textarea.value = email;
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textarea);
+      alert('Email address copied to clipboard!');
+    }
+  </script>
 </body>
 </html>
