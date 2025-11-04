@@ -332,18 +332,18 @@ footer {
   }
 }
 
-/* --- Outreach / Engagements Image Gallery Fixes --- */
+/* --- Outreach / Engagements Image Gallery (Refined Size Control) --- */
 .image-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  justify-items: center;
   margin-top: 10px;
 }
 
 .image-gallery img {
   width: 100%;
-  max-width: 300px;          /* controls desktop size */
+  max-width: 240px;        /* Hard upper limit on desktop */
   height: auto;
   border-radius: 8px;
   object-fit: cover;
@@ -352,13 +352,16 @@ footer {
 }
 
 .image-gallery img:hover {
-  transform: scale(1.04);
+  transform: scale(1.03);
 }
 
-/* Responsive for small screens */
+/* Mobile: single column, smaller images */
 @media (max-width: 768px) {
+  .image-gallery {
+    grid-template-columns: 1fr;
+  }
+
   .image-gallery img {
     max-width: 90%;
   }
 }
-
