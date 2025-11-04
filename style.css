@@ -130,3 +130,33 @@ nav ul li a:hover::after {
   background-color: var(--accent-light);
   padding: 8px 18px;
   border-radius
+
+/* --- Research Page Additions --- */
+.hero.small {
+  background: white;
+  text-align: center;
+  padding: 40px 20px 20px 20px;
+}
+
+.hero-container.small h1 {
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+.hero-subtext {
+  font-size: 1.1em;
+  color: #555;
+}
+
+.pub-list {
+  list-style: none;
+  padding: 0;
+}
+
+.pub-list li {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  padding: 20px;
+  margin-bottom: 25px;
+  font-size: 1em
