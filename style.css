@@ -270,6 +270,27 @@ footer {
   border-top: 1px solid #eee;
 }
 
+/* ===========================
+   PAGE HEADERS (Research & Leadership)
+=========================== */
+.hero.small {
+  background: white;
+  text-align: center;
+  padding: 60px 20px 30px;
+  border-bottom: 1px solid #eee;
+}
+
+.hero.small h1 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.hero-subtext {
+  font-size: 1.05em;
+  color: #555;
+  margin: 0;
+}
+
 /* =====================================
    RESPONSIVE ADJUSTMENTS
 ===================================== */
@@ -281,10 +302,13 @@ footer {
     gap: 20px;
   }
 
-  .profile-pic {
-    width: 80px;
-    height: 80px;
-  }
+   .profile-pic {
+     width: 130px;
+     height: 130px;
+   }
+   .profile-pic:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+   }
 
   .figure-container img,
   .poster-card img {
