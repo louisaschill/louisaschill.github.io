@@ -155,9 +155,9 @@ h1, h2, h3 {
 }
 
 .institution-logos img {
-  height: 22px;     /* 1/10th of current size */
+  height: 32px; /* was 22px — increase for a more visible size */
   width: auto;
-  opacity: 0.85;
+  opacity: 0.9;
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
