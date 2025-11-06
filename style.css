@@ -298,12 +298,16 @@ img {
   transform: scale(1.03);
 }
 
-/* Smaller figure for specific research image */
+/* =====================================
+   SMALL FIGURE VARIANT (for smaller visuals)
+===================================== */
 .small-figure {
-  max-width: 350px; /* smaller than global 480px cap */
+  max-width: 240px;   /* half of the usual 480px cap */
+  width: 100%;
+  height: auto;
   display: block;
-  margin: 12px auto 18px;
-  border-radius: 8px;
+  margin: 10px auto 20px;
+  border-radius: 6px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
