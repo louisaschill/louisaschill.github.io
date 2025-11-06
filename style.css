@@ -298,18 +298,6 @@ img {
   transform: scale(1.03);
 }
 
-/* =====================================
-   SMALL FIGURE VARIANT (for smaller visuals)
-===================================== */
-.small-figure {
-  max-width: 240px;   /* half of the usual 480px cap */
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 10px auto 20px;
-  border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-}
 
 /* =====================================
    EXPERIENCE / OUTREACH CARDS
@@ -416,4 +404,17 @@ footer {
   .section {
     margin: 40px auto;
   }
+}
+
+/* =====================================
+   SMALL FIGURE VARIANT (for smaller visuals)
+===================================== */
+.small-figure {
+  max-width: 240px;   /* half of the usual 480px cap */
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
