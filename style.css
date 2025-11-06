@@ -88,13 +88,6 @@ h1, h2, h3 {
   flex-wrap: wrap;
 }
 
-.profile-pic {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
 
 .hero-text {
   flex: 1;
@@ -131,21 +124,38 @@ h1, h2, h3 {
 }
 
 /* =====================================
-   INSTITUTION LOGOS GRID (Home Header)
+   PROFILE IMAGE SIZE (Home Header)
+===================================== */
+.profile-pic {
+  width: 160px;      /* larger and more visible */
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.03);
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.12);
+}
+
+/* =====================================
+   INSTITUTION LOGOS (Tiny + 2-row grid)
 ===================================== */
 .institution-logos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   align-items: center;
-  gap: 15px 25px;
-  max-width: 500px;
+  gap: 10px 20px;
+  max-width: 400px;
   margin: 25px auto 10px;
   padding: 10px 0 20px;
 }
 
 .institution-logos img {
-  height: 26px;   /* Much smaller logos */
+  height: 22px;     /* 1/10th of current size */
   width: auto;
   opacity: 0.85;
   transition: opacity 0.3s ease, transform 0.3s ease;
@@ -153,31 +163,32 @@ h1, h2, h3 {
 
 .institution-logos img:hover {
   opacity: 1;
-  transform: scale(1.08);
+  transform: scale(1.05);
 }
 
-/* Second row centering (2 logos) */
+/* Center the second row of 2 logos */
 .institution-logos img:nth-child(4),
 .institution-logos img:nth-child(5) {
   grid-column: span 1;
 }
 
-/* Force second row centered */
 .institution-logos::after {
   content: "";
   grid-column: 2 / 3;
 }
 
-/* Mobile: stack neatly in two rows */
+/* Responsive scaling */
 @media (max-width: 768px) {
+  .profile-pic {
+    width: 130px;
+    height: 130px;
+  }
   .institution-logos {
     grid-template-columns: repeat(2, 1fr);
-    gap: 12px 18px;
     max-width: 300px;
   }
-
   .institution-logos img {
-    height: 22px;
+    height: 18px;
   }
 }
 
