@@ -154,12 +154,6 @@ h1, h2, h3 {
   padding: 10px 0 20px;
 }
 
-.institution-logos img {
-  height: 32px; /* was 22px — increase for a more visible size */
-  width: auto;
-  opacity: 0.9;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
 
 .institution-logos img:hover {
   opacity: 1;
@@ -175,6 +169,13 @@ h1, h2, h3 {
 .institution-logos::after {
   content: "";
   grid-column: 2 / 3;
+}
+
+.institution-logos img {
+  height: 42px; /* slightly larger, subtle but clear */
+  width: auto;
+  opacity: 0.9;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 /* Responsive scaling */
