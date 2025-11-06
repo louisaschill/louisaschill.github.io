@@ -199,29 +199,46 @@ h1, h2, h3 {
 }
 
 /* =====================================
-   SKILLS GRID
+   SKILLS GRID (Technical Expertise)
 ===================================== */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 12px;
-  margin-top: 15px;
+  gap: 18px;
+  margin-top: 25px;
 }
 
 .skills-grid div {
   background: white;
   border: 1px solid #e2e2e2;
-  border-radius: 8px;
-  padding: 12px 15px;
+  border-radius: 10px;
+  padding: 18px 16px;
   text-align: center;
-  font-size: 0.95em;
   transition: all 0.2s ease;
 }
 
 .skills-grid div:hover {
   border-color: var(--accent);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
 }
+
+/* Skill category heading */
+.skills-grid h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05em;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+/* Subtext examples */
+.skills-grid p {
+  margin: 0;
+  font-size: 0.92em;
+  color: #444;
+  line-height: 1.5;
+}
+
 
 /* =====================================
    IMAGE HANDLING (GLOBAL)
