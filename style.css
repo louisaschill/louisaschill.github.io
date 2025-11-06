@@ -409,8 +409,8 @@ footer {
 /* =====================================
    SMALL FIGURE VARIANT (for smaller visuals)
 ===================================== */
-.small-figure {
-  max-width: 240px;   /* half of the usual 480px cap */
+.figure-container img.small-figure {
+  max-width: 240px !important; /* force smaller width */
   width: 100%;
   height: auto;
   display: block;
