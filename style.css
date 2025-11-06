@@ -278,6 +278,16 @@ img {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
+.poster-card img.small-figure {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 12px auto 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
 .image-gallery {
   display: flex;
   flex-wrap: wrap;
